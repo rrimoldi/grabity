@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="3DMatrixApp" ng-controller="3DMatrixAppCtrl as vm">
+	<head>
+		<title>Grability Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<form action="">
+			<h1 style="color:red">{{vm.validation}}</h1>
+			<div>
+	        	<p>Input</p>
+	        	<textarea rows="10" ng-model="vm.sampleInput" ng-keypress="($event.keyCode==13)?vm.getOutput():return">{{vm.sampleInput}}</textarea>
+	        </div>
+	        <div>
+	            <p>Output</p>
+	            <textarea rows="10" ng-model="vm.sampleOutput">{{vm.sampleOutput}}</textarea>
+	        </div>
+		</form>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+	    <script type="text/javascript" src="app/js/controllers.js"></script>
+	</body>
+</html>
